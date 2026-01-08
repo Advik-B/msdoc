@@ -2,7 +2,7 @@ package tests
 
 import (
 	"encoding/binary"
-	"github.com/TalentFormula/msdoc/fib"
+	"github.com/Advik-B/msdoc/fib"
 	"testing"
 )
 

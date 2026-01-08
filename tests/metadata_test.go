@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/TalentFormula/msdoc/ole2"
-	"github.com/TalentFormula/msdoc/pkg"
+	"github.com/Advik-B/msdoc/ole2"
+	"github.com/Advik-B/msdoc/pkg"
 )
 
 // TestMetadataExtraction tests metadata extraction from sample documents
@@ -42,7 +42,7 @@ func TestMetadataExtraction(t *testing.T) {
 			expectedKeywords:      "tag1",
 			expectedComments:      "Yayy",
 			expectedAppName:       "Microsoft Office Word",
-			expectedCompany:       "TalentFormula",
+			expectedCompany:       "Advik-B",
 			expectedManager:       "Who Knows",
 			expectedContentStatus: "ready",
 			expectedContentType:   "application/msword",

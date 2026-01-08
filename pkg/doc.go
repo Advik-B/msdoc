@@ -45,14 +45,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/TalentFormula/msdoc/crypto"
-	"github.com/TalentFormula/msdoc/fib"
-	"github.com/TalentFormula/msdoc/formatting"
-	"github.com/TalentFormula/msdoc/macros"
-	"github.com/TalentFormula/msdoc/metadata"
-	"github.com/TalentFormula/msdoc/objects"
-	"github.com/TalentFormula/msdoc/ole2"
-	"github.com/TalentFormula/msdoc/writer"
+	"github.com/Advik-B/msdoc/crypto"
+	"github.com/Advik-B/msdoc/fib"
+	"github.com/Advik-B/msdoc/formatting"
+	"github.com/Advik-B/msdoc/macros"
+	"github.com/Advik-B/msdoc/metadata"
+	"github.com/Advik-B/msdoc/objects"
+	"github.com/Advik-B/msdoc/ole2"
+	"github.com/Advik-B/msdoc/writer"
 )
 
 // Document represents a loaded Microsoft Word .doc file.
@@ -297,7 +297,7 @@ func (d *Document) MarkdownText() (string, error) {
 	if err != nil {
 		// If hyperlink extraction fails, use simple fallback
 		if strings.HasSuffix(strings.TrimSpace(plainText), "For more information,") {
-			return plainText + " [click here](https://github.com/TalentFormula/msdoc)", nil
+			return plainText + " [click here](https://github.com/Advik-B/msdoc)", nil
 		}
 		return plainText, nil
 	}
@@ -305,7 +305,7 @@ func (d *Document) MarkdownText() (string, error) {
 	// If no hyperlinks were found (same as plain text), try simple detection
 	if markdownText == plainText {
 		if strings.HasSuffix(strings.TrimSpace(plainText), "For more information,") {
-			return plainText + " [click here](https://github.com/TalentFormula/msdoc)", nil
+			return plainText + " [click here](https://github.com/Advik-B/msdoc)", nil
 		}
 	}
 

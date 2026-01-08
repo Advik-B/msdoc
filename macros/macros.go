@@ -13,7 +13,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/TalentFormula/msdoc/ole2"
+	"github.com/Advik-B/msdoc/ole2"
 )
 
 // VBAProject represents a VBA project contained in the document.

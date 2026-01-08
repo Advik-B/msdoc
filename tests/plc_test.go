@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"github.com/TalentFormula/msdoc/structures"
+	"github.com/Advik-B/msdoc/structures"
 )
 
 func TestPLCParsing(t *testing.T) {

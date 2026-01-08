@@ -3,7 +3,7 @@ package streams
 import (
 	"fmt"
 
-	"github.com/TalentFormula/msdoc/structures"
+	"github.com/Advik-B/msdoc/structures"
 )
 
 // TableStream represents either the 0Table or 1Table stream containing formatting information.

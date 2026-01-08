@@ -7,7 +7,7 @@ import (
 	"testing"
 	"unicode/utf16"
 
-	"github.com/TalentFormula/msdoc/ole2"
+	"github.com/Advik-B/msdoc/ole2"
 )
 
 // Helper to create a UTF-16 representation for directory entries

@@ -14,7 +14,7 @@ import (
 	"time"
 	"unicode/utf16"
 
-	"github.com/TalentFormula/msdoc/ole2"
+	"github.com/Advik-B/msdoc/ole2"
 )
 
 // DocumentMetadata holds comprehensive document metadata information.
@@ -510,16 +510,16 @@ func (me *MetadataExtractor) searchMetadataInAllStreams(metadata *DocumentMetada
 func (me *MetadataExtractor) extractCompanyFromStreams(metadata *DocumentMetadata) error {
 	// Try Data stream first (UTF-16 encoded)
 	if dataStream, err := me.reader.ReadStream("Data"); err == nil {
-		if me.findUTF16StringInData(dataStream, "TalentFormula") {
-			metadata.Company = "TalentFormula"
+		if me.findUTF16StringInData(dataStream, "Advik-B") {
+			metadata.Company = "Advik-B"
 			return nil
 		}
 	}
 	
 	// Try WordDocument stream (ASCII encoded)
 	if wordStream, err := me.reader.ReadStream("WordDocument"); err == nil {
-		if strings.Contains(string(wordStream), "TalentFormula") {
-			metadata.Company = "TalentFormula"
+		if strings.Contains(string(wordStream), "Advik-B") {
+			metadata.Company = "Advik-B"
 			return nil
 		}
 	}
@@ -566,15 +566,15 @@ func (me *MetadataExtractor) extractFromDocumentContent(metadata *DocumentMetada
 	found := false
 	
 	// Look for company information in URLs or text
-	if strings.Contains(content, "TalentFormula") {
-		metadata.Company = "TalentFormula"
+	if strings.Contains(content, "Advik-B") {
+		metadata.Company = "Advik-B"
 		found = true
 	}
 	
 	// Look for hyperlinks that might contain metadata
-	if match := strings.Index(content, "github.com/TalentFormula"); match != -1 {
+	if match := strings.Index(content, "github.com/Advik-B"); match != -1 {
 		if metadata.Company == "" {
-			metadata.Company = "TalentFormula"
+			metadata.Company = "Advik-B"
 			found = true
 		}
 	}
@@ -608,7 +608,7 @@ func (me *MetadataExtractor) extractFromEmbeddedData(metadata *DocumentMetadata)
 		"Who Knows":      &metadata.Manager,
 		"dumb":           &metadata.Category,
 		"ready":          &metadata.ContentStatus,
-		"TalentFormula":  &metadata.Company,
+		"Advik-B":  &metadata.Company,
 	}
 	
 	found := false
@@ -672,7 +672,7 @@ func (me *MetadataExtractor) extractMetadataFromContent(content string, metadata
 	
 	// Look for common patterns that might indicate metadata
 	patterns := map[string]*string{
-		"TalentFormula": &metadata.Company,
+		"Advik-B": &metadata.Company,
 	}
 	
 	for pattern, field := range patterns {
@@ -735,7 +735,7 @@ func (me *MetadataExtractor) comprehensiveMetadataSearch(metadata *DocumentMetad
 		"Who Knows":      &metadata.Manager,
 		"dumb":           &metadata.Category,
 		"ready":          &metadata.ContentStatus,
-		"TalentFormula":  &metadata.Company,
+		"Advik-B":  &metadata.Company,
 	}
 	
 	found := false

@@ -7,7 +7,7 @@ import (
 	"time"
 	"unicode/utf16"
 
-	"github.com/TalentFormula/msdoc/structures"
+	"github.com/Advik-B/msdoc/structures"
 )
 
 // Text extracts the plain text content from the document.
@@ -407,7 +407,7 @@ func (d *Document) extractTextWithSimpleHyperlinkDetection(plainText string) (st
 	if strings.HasSuffix(strings.TrimSpace(plainText), "For more information,") {
 		// This suggests there should be a hyperlink after this text
 		// Let's add a placeholder hyperlink for now
-		return plainText + " [click here](https://github.com/TalentFormula/msdoc)", nil
+		return plainText + " [click here](https://github.com/Advik-B/msdoc)", nil
 	}
 
 	return plainText, nil

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/TalentFormula/msdoc/ole2"
+	"github.com/Advik-B/msdoc/ole2"
 )
 
 func main() {
