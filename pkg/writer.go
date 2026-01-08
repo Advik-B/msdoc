@@ -25,7 +25,7 @@
 package msdoc
 
 import (
-	"github.com/TalentFormula/msdoc/writer"
+	"github.com/Advik-B/msdoc/writer"
 )
 
 // DocumentWriter provides functionality for creating and modifying .doc files.

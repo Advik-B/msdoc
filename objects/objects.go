@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/TalentFormula/msdoc/ole2"
+	"github.com/Advik-B/msdoc/ole2"
 )
 
 // ObjectType represents the type of embedded object.

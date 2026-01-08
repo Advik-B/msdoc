@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/TalentFormula/msdoc/pkg"
+	"github.com/Advik-B/msdoc/pkg"
 )
 
 func main() {

@@ -12,9 +12,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/TalentFormula/msdoc/fib"
-	"github.com/TalentFormula/msdoc/formatting"
-	"github.com/TalentFormula/msdoc/ole2"
+	"github.com/Advik-B/msdoc/fib"
+	"github.com/Advik-B/msdoc/formatting"
+	"github.com/Advik-B/msdoc/ole2"
 )
 
 // DocumentWriter provides functionality for creating and modifying .doc files.

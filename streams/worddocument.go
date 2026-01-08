@@ -3,8 +3,8 @@ package streams
 import (
 	"fmt"
 
-	"github.com/TalentFormula/msdoc/fib"
-	"github.com/TalentFormula/msdoc/structures"
+	"github.com/Advik-B/msdoc/fib"
+	"github.com/Advik-B/msdoc/structures"
 )
 
 // WordDocumentStream represents the main document stream containing text and the FIB.

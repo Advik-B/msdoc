@@ -26,7 +26,7 @@ MsDoc is a Go library that implements the Microsoft Word Binary File Format (.do
 ## Installation
 
 ```bash
-go get github.com/TalentFormula/msdoc
+go get github.com/Advik-B/msdoc
 ```
 
 ## Quick Start
@@ -38,7 +38,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/TalentFormula/msdoc/pkg/msdoc"
+	"github.com/Advik-B/msdoc/pkg/msdoc"
 )
 
 func main() {
@@ -123,7 +123,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/TalentFormula/msdoc/pkg/msdoc"
+	"github.com/Advik-B/msdoc/pkg/msdoc"
 )
 
 func main() {
@@ -151,8 +151,8 @@ package main
 import (
 	"log"
 
-	"github.com/TalentFormula/msdoc/pkg/msdoc"
-	"github.com/TalentFormula/msdoc/formatting"
+	"github.com/Advik-B/msdoc/pkg/msdoc"
+	"github.com/Advik-B/msdoc/formatting"
 )
 
 func main() {
@@ -203,7 +203,7 @@ func main() {
 The library includes a command-line tool for debugging and text extraction:
 
 ```bash
-go install github.com/TalentFormula/msdoc/cmd/msdocdump
+go install github.com/Advik-B/msdoc/cmd/msdocdump
 msdocdump document.doc
 ```
 
